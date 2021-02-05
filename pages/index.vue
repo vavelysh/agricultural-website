@@ -1,73 +1,67 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        agro
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <section class="container">
+      <header class="container-text">
+        <h2>Roboty ziemne i drogowe</h2>
+        <h1>Usługi komunalne i rolnicze</h1>
+        <p>Pykacz Marcin</p>
+      </header>
+    </section>
+    <AboutBox />
+    <ServicesBox />
+    <ContactBox/>
   </div>
 </template>
 
-<script>
-export default {}
-</script>
-
-<style>
+<style lang="scss" scoped>
+@import "assets/styles/viewport-sizes";
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 40vh;
+  background-image: linear-gradient(to right, hsla(282, 10%, 20%, 0.7), hsla(120, 7%, 9%, 0.8)),
+    url('~assets/images/hero.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: bottom center;
+  @media screen and (min-width: $mobile) {
+    height: 70vh;
+    background-position: center center;
+  }
+
+}
+.container-text {
+  padding: 20px 15px;
+  font-size: 3.3vmin;
   text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  & h1 {
+    font-weight: 600;
+    font-size: 1.6em;
+  }
+  & h2 {
+    font-weight: 500;
+  }
+  & p {
+    font-weight: 100;
+  }
+  & h2,
+  & p {
+    font-size: 1.3em;
+  }
 }
 </style>
+
+<script>
+import HeaderTitle from '../components/HeaderTitle';
+import AboutBox from '../components/AboutBox';
+import ServicesBox from '../components/ServicesBox';
+import ContactBox from '../components/ContactBox'
+
+export default {
+  components: { ContactBox, ServicesBox, AboutBox, HeaderTitle },
+};
+</script>

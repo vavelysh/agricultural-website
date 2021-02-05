@@ -1,0 +1,81 @@
+<template>
+  <section class="wrapper">
+    <div class="nav-container">
+      <nuxt-link to="/" class="logo">
+        <Logo />
+      </nuxt-link>
+      <nav class='nav-items'>
+        <NavItems/>
+      </nav>
+      <div @click="toggleSidebar" class="burger">
+        <MenuOpen />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import Logo from './UI/Logo';
+import MenuOpen from './UI/MenuOpen';
+import NavItems from './NavItems'
+export default {
+  name: 'Navbar',
+  components: { NavItems, MenuOpen, Logo },
+  props: {
+    toggleSidebar: Function,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+@import 'assets/styles/viewport-sizes';
+@import 'assets/styles/padding-sizes';
+
+.nav-items {
+  display: none;
+  @media screen and(min-width: $tablet) {
+    display: block;
+  }
+}
+.logo,
+.burger {
+  display: block;
+  fill: black;
+}
+.logo {
+  width: 85px;
+  @media screen and(min-width: $tablet) {
+    width: 135px;
+    padding-left: 35px;
+    display: block;
+  }
+}
+.burger {
+  width: 40px;
+  @media screen and(min-width: $tablet) {
+    display: none;
+  }
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  box-shadow: 1px -2px 5px black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 10px 15px;
+  z-index: 10;
+  background: #f4f7f6;
+  border-bottom: 1px solid hsla(180, 2%, 68%, 0.7);
+}
+</style>
