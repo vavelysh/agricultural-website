@@ -1,14 +1,18 @@
 <template>
-  <div class='f'>
+  <div>
     <video
            class="video-container"
-           src="~/assets/siema.mp4"
            autoplay
            loop
            playsinline
            muted
-    />
-    <AboutBox extended="true" />
+           :poster='require(`~/assets/poster.png`)'
+    >
+<!--      https://res.cloudinary.com/dtvvkwgbg/video/upload/v1612010002/agrolp/video_agro.mp4-->
+      <source :src="$cloudinary.video.url('/agrolp/video_agro.mp4')" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <AboutBox :extended="true" />
   </div>
 </template>
 
@@ -23,6 +27,7 @@ export default {
 <style lang='scss' scoped>
 @import 'assets/styles/viewport-sizes';
 .video-container {
+  filter: brightness(70%);
   width: 100%;
   object-fit: cover;
   height: 40vh;

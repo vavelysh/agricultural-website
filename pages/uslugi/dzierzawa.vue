@@ -4,7 +4,7 @@
       Dzierżawa i sprzedaż
     </template>
     <template #content>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/dzierzawa/1.jpg?resize&size=700`)'>
         <h5>Dzierżawa</h5>
         <p>Wydzierżawię:</p>
         <ul>
@@ -13,7 +13,7 @@
           <li>nieużytki</li>
         </ul>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/dzierzawa/main.jpg?resize&size=700`)'>
         <h5>Sprzedaż</h5>
         <p>Sprzedajemy kruszywa takie jak:</p>
         <ul>
@@ -25,10 +25,10 @@
         </ul>
         <p>i wiele innych.</p>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/dzierzawa/2.jpg?resize&size=700`)'>
         <h5>Przekształcanie nieużytków i ugorów</h5>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/dzierzawa/3.jpg?resize&size=700`)'>
         <h5>Zagospodarowanie terenu</h5>
       </ContainerService>
     </template>

@@ -4,7 +4,7 @@
       Usługi komunalne
     </template>
     <template #content>
-      <ContainerService>
+    <ContainerService :image='require(`~/assets/images/komunalne/main.jpg?resize&size=700`)'>
         <h5>Koszenie poboczy drogowych, łąk i nieużytków</h5>
         <p>Odbywa się za pomocą kosiarek bijakowych o różnej szerokości roboczej i zasięgu pracy.</p>
         <ul>
@@ -14,49 +14,49 @@
           <li>kosiarka spalinowa ( miejsca trudnodostępne )</li>
         </ul>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/komunalne/2.jpg?resize&size=700`)'>
         <h5>Utrzymanie zieleni</h5>
-        <p>Koszenie</p>
+        <p>Koszenie:</p>
         <ul>
           <li>traktorkami</li>
           <li>kosiarkami samobieżnymi</li>
           <li>kosami spalinowymi</li>
         </ul>
-        <p>Zbiór dmuchawami i odkurzaczami traw i liści</p>
+        <p>Zbiór dmuchawami i odkurzaczami traw i liści.</p>
         <p>Oferujemy także:</p>
         <ul>
-          <li>Wywóz pozostałości</li>
-          <li>Całoroczne utrzymanie zieleni miejskiej, parków, boisk, ogrodów, skwerów</li>
-          <li>Nasadzenia drzew, krzewów, roślin</li>
-          <li>Wertykulacja</li>
-          <li>Piaskowanie</li>
-          <li>Oprysk</li>
-          <li>Nawożenie</li>
+          <li>wywóz pozostałości</li>
+          <li>całoroczne utrzymanie zieleni miejskiej, parków, boisk, ogrodów, skwerów</li>
+          <li>nasadzenia drzew, krzewów, roślin</li>
+          <li>wertykulacja</li>
+          <li>piaskowanie</li>
+          <li>oprysk</li>
+          <li>nawożenie</li>
         </ul>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/komunalne/3.jpg?resize&size=700`)'>
         <h5>Wycinka i pielęgnacja drzew - usługi rębakiem</h5>
         <p>Oferujemy:</p>
         <ul>
-          <li>Wycinka drzew i samosiejek</li>
-          <li>Cięcia pielęgnacyjne</li>
-          <li>Prześwietlanie koron</li>
-          <li>Karczowanie</li>
-          <li>Przygotowanie terenu pod inwestycje i budowę</li>
-          <li>Zrębkowanie gałęzi</li>
-          <li>Wycinka z podnośnika koszowego</li>
+          <li>wycinka drzew i samosiejek</li>
+          <li>cięcia pielęgnacyjne</li>
+          <li>prześwietlanie koron</li>
+          <li>karczowanie</li>
+          <li>przygotowanie terenu pod inwestycje i budowę</li>
+          <li>zrębkowanie gałęzi</li>
+          <li>wycinka z podnośnika koszowego</li>
         </ul>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/komunalne/4.jpg?resize&size=700`)'>
         <h5>Utrzymanie czystości i porządku</h5>
         <p>Oferujemy:</p>
         <ul>
-          <li>Sprzątanie placów, dróg, chodników i innych terenów</li>
-          <li>Zamiatanie powierzchni mechaniczne, jak i ręczne</li>
-          <li>Mycie znaków, przystanków.</li>
-          <li>Opróżnianie kubłów na śmieci</li>
-          <li>Usuwanie piasku, błota, liści i innych zanieczyszczeń</li>
-          <li>Obsługa - utrzymanie czystości na budowach itd.</li>
+          <li>sprzątanie placów, dróg, chodników i innych terenów</li>
+          <li>zamiatanie powierzchni mechaniczne, jak i ręczne</li>
+          <li>mycie znaków, przystanków.</li>
+          <li>opróżnianie kubłów na śmieci</li>
+          <li>usuwanie piasku, błota, liści i innych zanieczyszczeń</li>
+          <li>obsługa - utrzymanie czystości na budowach itd.</li>
         </ul>
       </ContainerService>
     </template>
@@ -69,6 +69,6 @@ import BusinessService from '../../components/BusinessService/BusinessService'
 
 export default {
   components: { BusinessService, ContainerService },
-  name: 'komunalne'
+  name: 'komunalne',
 }
 </script>

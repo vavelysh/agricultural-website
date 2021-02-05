@@ -70,7 +70,8 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 2fr;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
   margin: 0 auto;
   padding: $mobilePadding;
   @media screen and (min-width: $tablet) {
@@ -102,7 +103,7 @@ export default {
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
-  background-image: url("~assets/images/rolnicze/1.jpg");
+  background-image: url("~assets/images/rolnicze/1.jpg?resize&size=500");
   width: 100%;
   height: 100%;
   order: 2;
@@ -128,7 +129,6 @@ export default {
 
 .service-list-container {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
   list-style: none;
   width: 100%;
   height: min-content;

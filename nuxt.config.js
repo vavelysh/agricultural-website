@@ -28,20 +28,35 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/google-fonts'],
+  buildModules: ['@nuxtjs/google-fonts','@aceforth/nuxt-optimized-images'],
+  optimizedImages: {
+    optimizeImages: true,
+    mozjpeg: {
+      quality: 86,
+    },
+    webp: {
+      preset: 'default',
+      quality: 100,
+    },
+    responsive: {
+      adapter: require("responsive-loader/sharp"),
+    }
+  },
   googleFonts: {
     families: {
-      Poppins: [100,500,600,800],
-      Cabin:true,
-      'Open+Sans': true,
-      Roboto: true
+      'Open+Sans':true,
+      Poppins: [100,500,600],
+      Cabin:[400,500],
+      Roboto: [600]
     },
     display: 'swap',
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
-
+  modules: ['@nuxtjs/cloudinary'],
+  cloudinary: {
+    cloudName: 'dtvvkwgbg'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };

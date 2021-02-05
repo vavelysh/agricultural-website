@@ -33,7 +33,9 @@ export default {
   flex-direction: column;
   align-items: center;
   list-style: none;
-  font-family: 'Open Sans',"Adobe Arabic",sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Open Sans','Roboto',"Adobe Arabic",sans-serif;
   & > li {
     margin: 20px;
   }
@@ -49,19 +51,15 @@ export default {
   color: hsl(0, 22%, 96%);
   text-decoration: none;
   transition:font-weight 0.1s ease-in,color 0.3s ease-in;
-  padding:0 40px;
+  padding:0 25px;
   &.nuxt-link-exact-active {
-    color: hsl(205, 99%, 44%);
     font-weight: bolder;
-    @media screen and (min-width: $tablet) {
-      color: hsl(205, 99%, 44%);
-    }
   }
   &:hover{
     color: #fcd7d7;
     font-weight: bolder;
     @media screen and (min-width: $tablet) {
-      color: #0e0d0d;
+      color: hsl(204, 79%, 4%);;
     }
   }
   @media screen and (min-width: $tablet) {

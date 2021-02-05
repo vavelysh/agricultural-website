@@ -2,7 +2,7 @@
   <BusinessService>
     <template #title> Roboty ziemne i drogowe </template>
     <template #content>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/roboty/main.jpg?resize&size=700`)'>
         <h5>Usługi koparko-ładowarką</h5>
         <p>Oferujemy:</p>
         <ul>
@@ -18,7 +18,7 @@
           <li>Usługa i wynajem walca - zagęszczarki</li>
         </ul>
       </ContainerService>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/roboty/4.jpg?resize&size=700`)'>
         <h5>Transport - bus wywrotka - do 3,5t</h5>
         <p>
           Transport samochodem ciężarowym - busem do 3,5t. Skrzynia wywrotka.
@@ -29,8 +29,10 @@
           <li>drewna</li>
           <li>piasku</li>
           <li>roślin</li>
-          <li>...innych kruszyw</li>
         </ul>
+        <p>
+          i innych kruszyw
+        </p>
       </ContainerService>
     </template>
   </BusinessService>

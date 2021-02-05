@@ -9,18 +9,24 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/cloudinary": "^1.0.3-beta-3",
     "core-js": "^3.8.3",
     "gsap": "^3.6.0",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxt/types": "^2.14.12",
     "@nuxtjs/google-fonts": "^1.2.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "fibers": "^5.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
     "prettier": "^2.2.1",
+    "responsive-loader": "^2.3.0",
     "sass": "^1.32.6",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "sharp": "^0.27.1",
+    "webp-loader": "^0.6.0"
   }
 }

@@ -33,7 +33,7 @@
           <p>
             Roboty ziemne i drogowe, usługi koparko - ładowarką, koparką i innym
             sprzętem budowlanym (walce, ubijarki), wynajem ciągników rolniczych
-            wraz z przyczepami, wywrotek itd.<br> Z usług rolniczych świadczymy
+            wraz z przyczepami, wywrotek itd. Z usług rolniczych świadczymy
             całoroczne utrzymanie upraw, w tym: orka, uprawa i siew, talerzowanie,
             zbiór płodów, mulczowanie i wiele innych.
           </p>
@@ -87,7 +87,7 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr repeat(2, auto);
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   padding: $mobilePadding;
   @media screen and (min-width: $tablet) {
@@ -112,7 +112,6 @@ export default {
 .info-article {
   grid-column: 1/3;
   color: hsl(0, 2%, 20%);
-  height: 100%;
   display: flex;
   justify-self: center;
   flex-direction: column;
@@ -122,21 +121,17 @@ export default {
   font-weight: 400;
   & > * {
     font-size: 13px;
-    line-height: 1.7rem;
     padding-bottom: 15px;
-    @media screen and (min-width: $mobile) {
-      font-size: 14px;
-    }
     @media screen and (min-width: $tablet) {
       width: 750px;
-      font-size: 15px;
-    }
-    @media screen and (min-width: $desktop) {
-      font-size: 18px;
+      font-size: 1.1rem;
     }
   }
   & ul {
     padding-left: 20px;
+  }
+  & li {
+    padding: 5px 0;
   }
   &:last-child {
     padding-right: 0;
@@ -154,7 +149,7 @@ export default {
 .bar-image{
   width: 100%;
   height: 180px;
-  background-image: url("~assets/images/bar.jpg");
+  background-image: url("~assets/images/bar.jpg?webp");
   filter: saturate(140%);
   background-size: cover;
   background-position: center 20%;

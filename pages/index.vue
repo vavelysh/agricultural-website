@@ -21,7 +21,7 @@
   justify-content: center;
   height: 40vh;
   background-image: linear-gradient(to right, hsla(282, 10%, 20%, 0.7), hsla(120, 7%, 9%, 0.8)),
-    url('~assets/images/hero.jpg');
+    url('~assets/images/hero.jpg?resize&size=1100?webp');
   background-size: cover;
   background-attachment: scroll;
   background-position: bottom center;
@@ -36,8 +36,10 @@
   font-size: 3.3vmin;
   text-align: center;
   color: white;
+  line-height: 1.8em;
   text-transform: uppercase;
-  font-family: 'Poppins', 'Roboto', sans-serif;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+
   & h1 {
     font-weight: 600;
     font-size: 1.6em;
@@ -46,7 +48,7 @@
     font-weight: 500;
   }
   & p {
-    font-weight: 100;
+    font-weight:100;
   }
   & h2,
   & p {

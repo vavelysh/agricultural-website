@@ -2,7 +2,7 @@
   <BusinessService>
     <template #title>Sezon zimowy</template>
     <template #content>
-      <ContainerService>
+      <ContainerService :image='require(`~/assets/images/zimowy/main.jpg?resize&size=700`)'>
         <p>Oferujemy zimowe utrzymanie:</p>
         <ul>
           <li>dróg</li>

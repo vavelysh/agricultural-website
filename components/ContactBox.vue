@@ -45,7 +45,7 @@ export default {
 @import 'assets/styles/viewport-sizes';
 @import 'assets/styles/padding-sizes';
 .image-p {
-  background-image: url('~assets/images/contact.jpg');
+  background-image: url('~assets/images/contact.jpg?resize&size=500');
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
@@ -119,12 +119,13 @@ export default {
   padding: 20px 0;
   & span {
     font-size: 10px;
-    font-family: 'Roboto','Verdana',sans-serif;
+    text-align: center;
+    font-family: 'Open Sans','Verdana',sans-serif;
     color:#0e0d0d;
-
     font-weight: 600;
-    @media screen and (min-width: $tablet) {
-      font-size: 13px;
+    @media screen and (min-width: $desktop-hd) {
+      font-size: 15px;
+
     }
   }
   & img {
