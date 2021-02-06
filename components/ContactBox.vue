@@ -5,20 +5,20 @@
         <HeaderTitle text='Kontakt'/>
       </div>
       <section class='wrapper'>
-        <a rel='noreferrer' href='tel:48798307900' class='contact-item'>
+        <a target="_blank"  rel='noreferrer' href='tel:48798307900' class='contact-item'>
           <img src='~assets/phone-icon.svg' alt='Phone icon'>
           <span>+48 798 307 900</span>
         </a>
-        <a rel='noreferrer' href='mailto:agromar.chybie@gmail.com' class='contact-item'>
+        <a target="_blank"  rel='noreferrer' href='mailto:agromar.chybie@gmail.com' class='contact-item'>
           <img src='~assets/email-icon.svg' alt='Phone icon'>
           <span>agromar.chybie@gmail.com</span>
         </a>
-        <a rel='noreferrer' href='https://goo.gl/maps/ffBY9fTkRuwNiR1M8' class='contact-item'>
+        <a target="_blank"  rel='noreferrer' href='https://goo.gl/maps/ffBY9fTkRuwNiR1M8' class='contact-item'>
           <img src='~assets/map-icon.svg' alt='Phone icon'>
           <span>ul. Bielska 14<br>
 43-520 Chybie</span>
         </a>
-        <a rel='noreferrer' href='https://www.facebook.com/Agro-Mar-Pykacz-Marcin-Us%C5%82ugi-Komunalne-i-Rolnicze-Roboty-Ziemne-Chybie-1924696791078849' class='contact-item'>
+        <a target="_blank"  rel='noreferrer' href='https://www.facebook.com/Agro-Mar-Pykacz-Marcin-Us%C5%82ugi-Komunalne-i-Rolnicze-Roboty-Ziemne-Chybie-1924696791078849' class='contact-item'>
           <img src='~assets/facebook-icon.svg' alt='Phone icon'>
           <span>@agromarchybie</span>
         </a>

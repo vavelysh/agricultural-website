@@ -54,6 +54,7 @@
     <div v-if="!extended"
          class="bar-image"
     />
+
   </div>
 
 </template>
@@ -69,12 +70,30 @@ export default {
       default: false,
     },
   },
+  data() {
+    return {
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 @import 'assets/styles/viewport-sizes';
 @import 'assets/styles/padding-sizes';
+.example-slide {
+  align-items: center;
+  background-color: #666;
+  color: #ADB0B3;
+  display: flex;
+  background-image: url("~assets/images/bar.jpg?webp");
+  filter: saturate(140%);
+  background-size: cover;
+  background-position: center 20%;
+  height: 800px;
+  font-size: 1.5rem;
+  justify-content: center;
+  min-height: 10rem;
+}
 .boxUp {
   background: #F4F7F6;
   transform: translateY(-8vh);
@@ -124,7 +143,7 @@ export default {
     padding-bottom: 15px;
     @media screen and (min-width: $tablet) {
       width: 750px;
-      font-size: 1.1rem;
+      font-size: 18px;
     }
   }
   & ul {

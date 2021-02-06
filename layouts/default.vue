@@ -5,15 +5,18 @@
     <div class="content">
         <Nuxt />
     </div>
-    <footer class="footer">d</footer>
+    <div class="footer">
+      <Footer/>
+    </div>
   </div>
 </template>
 
 <script>
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar'
+import Footer from "../components/Footer";
 export default {
-  components: { Navbar,Sidebar },
+  components: { Footer, Navbar,Sidebar },
   data() {
     return {
       showSidebar: false,

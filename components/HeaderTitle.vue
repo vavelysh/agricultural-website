@@ -18,7 +18,7 @@ export default {
 <style lang='scss' scoped>
 @import "assets/styles/viewport-sizes";
 .box {
-  padding: 10px 0;
+  padding: 20px 0;
   margin:0;
   text-transform: uppercase;
   font-family: 'Poppins','Roboto',sans-serif;

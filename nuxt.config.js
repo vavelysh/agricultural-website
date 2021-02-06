@@ -47,7 +47,8 @@ export default {
       'Open+Sans':true,
       Poppins: [100,500,600],
       Cabin:[400,500],
-      Roboto: [600]
+      Roboto: [600],
+      'IBM+Plex+Mono':[300]
     },
     display: 'swap',
   },
