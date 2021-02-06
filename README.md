@@ -1,5 +1,4 @@
-# agro
-
+# ‍🌾 Agricultural website built in Nuxt.js
 ## Build Setup
 
 ```bash
