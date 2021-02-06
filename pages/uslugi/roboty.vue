@@ -1,8 +1,17 @@
 <template>
-  <BusinessService>
+  <BusinessService
+    to-back-text="Usługi rolnicze"
+    to-forward-text="Sezon zimowy"
+    to-back-path="/uslugi/rolnicze"
+    to-forward-path="/uslugi/sezon-zimowy">
     <template #title> Roboty ziemne i drogowe </template>
     <template #content>
-      <ContainerService :image='require(`~/assets/images/roboty/main.jpg?resize&size=700`)'>
+      <ContainerService
+        name-alt="Roboty ziemne i drogowe #1 image"
+        :image='require(`~/assets/images/roboty/main.jpg?resize&sizes[]=700&sizes[]=900&sizes[]=1200`)'
+        :imagewebp="require(`~/assets/images/roboty/main.jpg?resize&sizes[]=700&sizes[]=900&sizes[]=1200&format=webp`)"
+
+      >
         <h5>Usługi koparko-ładowarką</h5>
         <p>Oferujemy:</p>
         <ul>
@@ -18,7 +27,11 @@
           <li>Usługa i wynajem walca - zagęszczarki</li>
         </ul>
       </ContainerService>
-      <ContainerService :image='require(`~/assets/images/roboty/4.jpg?resize&size=700`)'>
+      <ContainerService
+        name-alt="Roboty ziemne i drogowe #2 image"
+        :image='require(`~/assets/images/roboty/4.jpg?resize&sizes[]=700&sizes[]=900&sizes[]=1200`)'
+        :imagewebp="require(`~/assets/images/roboty/4.jpg?resize&sizes[]=700&sizes[]=900&sizes[]=1200&format=webp`)"
+      >
         <h5>Transport - bus wywrotka - do 3,5t</h5>
         <p>
           Transport samochodem ciężarowym - busem do 3,5t. Skrzynia wywrotka.
@@ -45,5 +58,23 @@ import BusinessService from '../../components/BusinessService/BusinessService';
 export default {
   components: { BusinessService, ContainerService },
   name: 'roboty',
+  data() {
+    return {
+      title: 'Roboty ziemne i drogowe',
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Usługi robotami ziemnymi i drogowymi świadczone przez firmę Agro-Mar. Budowa dróg, zjazdów itp. Wyburzenia, rozbiórki, podbudowy. Przewóz kruszyw.',
+        },
+      ],
+    };
+  },
 };
 </script>

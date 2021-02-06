@@ -3,7 +3,16 @@
     <section class='container-service'>
       <slot/>
     </section>
-    <img :srcSet='image.srcSet' :src='image.src' alt='j'>
+    <picture>
+      <source :srcset="imagewebp.srcSet" type="image/webp">
+      <img
+        :width="image.width"
+        :height="image.height"
+        :srcset='image.srcSet'
+        :src='image.src'
+        :alt='nameAlt'
+      >
+    </picture>
   </div>
 
 </template>
@@ -12,8 +21,11 @@
 export default {
   name: 'ContainerService',
   props: {
-    image: Object
+    image: Object,
+    imagewebp: Object,
+    nameAlt: String
   },
+
 }
 </script>
 
@@ -25,7 +37,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  & > img {
+  & img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -41,6 +53,7 @@ export default {
       width: 800px;
     }
   }
+
 }
 
 .container-service {

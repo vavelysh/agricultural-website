@@ -4,6 +4,7 @@
     width="100%"
     height="450"
     style="border: 0"
+    title="Google Maps"
     allowfullscreen=""
     aria-hidden="false"
     tabindex="0"

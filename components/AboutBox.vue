@@ -1,10 +1,10 @@
 <template>
   <div>
     <section class="info-container">
-      <div class="info-header"  :class='{boxUp:extended}'>
+      <div class="info-header">
         <HeaderTitle text="O nas" />
       </div>
-      <article class="info-article">
+      <article class="info-article" :class='{boxUp:extended}'>
         <div>
           <p>
             <strong>AGRO-MAR</strong> to młoda, prężnie rozwijająca się firma,
@@ -80,27 +80,9 @@ export default {
 <style lang="scss" scoped>
 @import 'assets/styles/viewport-sizes';
 @import 'assets/styles/padding-sizes';
-.example-slide {
-  align-items: center;
-  background-color: #666;
-  color: #ADB0B3;
-  display: flex;
-  background-image: url("~assets/images/bar.jpg?webp");
-  filter: saturate(140%);
-  background-size: cover;
-  background-position: center 20%;
-  height: 800px;
-  font-size: 1.5rem;
-  justify-content: center;
-  min-height: 10rem;
-}
-.boxUp {
-  background: #F4F7F6;
-  transform: translateY(-8vh);
-  @media screen and (min-width: $tablet) {
-    transform: translateY(-10vh);
 
-  }
+.boxUp {
+  margin-bottom: 50px;
 }
 .info-container {
   display: grid;
@@ -121,11 +103,9 @@ export default {
 .info-header {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 30px;
   @media screen and (min-width: $tablet) {
     grid-column: 1/3;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 }
 .info-article {
@@ -168,7 +148,7 @@ export default {
 .bar-image{
   width: 100%;
   height: 180px;
-  background-image: url("~assets/images/bar.jpg?webp");
+  background-image: url("~assets/images/bar.jpg");
   filter: saturate(140%);
   background-size: cover;
   background-position: center 20%;

@@ -1,15 +1,41 @@
 <template>
-  <ContactBox/>
+  <main class="contact-box-wrapper">
+    <ContactBox/>
+  </main>
 </template>
 
 <script>
 import ContactBox from '../components/ContactBox'
 export default {
   name: 'kontakt',
-  components: { ContactBox }
+  components: { ContactBox },
+  data() {
+    return {
+      title: 'Kontakt',
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Zadzwoń pod +48 798 307 900 lub napisz do nas na agromar.chybie@gmail.com',
+        },
+      ],
+    };
+  },
 }
 </script>
 
 <style scoped>
-
+.contact-box-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>

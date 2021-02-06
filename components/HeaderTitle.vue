@@ -22,14 +22,14 @@ export default {
   margin:0;
   text-transform: uppercase;
   font-family: 'Poppins','Roboto',sans-serif;
-  color: hsl(0, 2%, 20%);
+  color: #163469;
   user-select: none;
 }
 .title {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 15px;
   @media screen and (min-width: $tablet){
-    font-size: 50px;
+    font-size: 20px;
   }
 }
 </style>

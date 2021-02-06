@@ -48,7 +48,7 @@ export default {
 }
 .nuxt-link {
   width: 100%;
-  color: hsl(0, 22%, 96%);
+  color: whitesmoke;
   text-decoration: none;
   transition:font-weight 0.1s ease-in,color 0.3s ease-in;
   padding:0 25px;
@@ -56,14 +56,10 @@ export default {
     font-weight: bolder;
   }
   &:hover{
-    color: #fcd7d7;
     font-weight: bolder;
-    @media screen and (min-width: $tablet) {
-      color: hsl(204, 79%, 4%);;
-    }
   }
   @media screen and (min-width: $tablet) {
-    color: hsl(0, 2%, 20%);
+    color: whitesmoke;
   }
 }
 </style>

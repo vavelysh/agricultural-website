@@ -7,7 +7,9 @@
         <p>Pykacz Marcin</p>
       </header>
     </section>
-    <AboutBox />
+    <main>
+      <AboutBox />
+    </main>
     <ServicesBox />
     <ContactBox/>
   </div>
@@ -17,17 +19,18 @@
 @import "assets/styles/viewport-sizes";
 .container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   height: 40vh;
-  background-image: linear-gradient(to right, hsla(282, 10%, 20%, 0.7), hsla(120, 7%, 9%, 0.8)),
-    url('~assets/images/hero.jpg?resize&size=1100?webp');
+  background-image: linear-gradient(to bottom, hsla(225, 33%, 5%, 0.6), hsla(211, 93%, 16%, 0.5)),
+    url('~assets/images/hero.jpg?resize&size=1500');
   background-size: cover;
   background-attachment: scroll;
+  filter: saturate(150%);
   background-position: bottom center;
   @media screen and (min-width: $mobile) {
-    height: 70vh;
-    background-position: center center;
+    height: 50vh;
+    background-position: center;
   }
 
 }
@@ -65,5 +68,6 @@ import ContactBox from '../components/ContactBox'
 
 export default {
   components: { ContactBox, ServicesBox, AboutBox, HeaderTitle },
+
 };
 </script>

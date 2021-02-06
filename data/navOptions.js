@@ -10,10 +10,9 @@ export default [
   {
     name: 'Usługi',
     path: '/uslugi',
-    image: ''
   },
   {
     name: 'Kontakt',
     path: '/kontakt',
   },
-]
+];

@@ -1,7 +1,7 @@
 <template>
   <div class='box-app'>
-    <Navbar :toggle-sidebar='toggleSidebar'/>
-    <Sidebar :show='showSidebar' :show-handler='toggleSidebar' />
+    <Navbar :toggleSidebar='toggleSidebar'/>
+    <Sidebar :show='showSidebar' :showHandler='toggleSidebar' />
     <div class="content">
         <Nuxt />
     </div>
@@ -24,7 +24,9 @@ export default {
   },
   methods: {
     toggleSidebar(){
-      this.showSidebar = !this.showSidebar
+      if(window.innerWidth < 780){
+        this.showSidebar = !this.showSidebar
+      }
     }
   }
 }

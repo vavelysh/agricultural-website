@@ -13,12 +13,12 @@
           <img src='~assets/email-icon.svg' alt='Phone icon'>
           <span>agromar.chybie@gmail.com</span>
         </a>
-        <a target="_blank"  rel='noreferrer' href='https://goo.gl/maps/ffBY9fTkRuwNiR1M8' class='contact-item'>
+        <a target="_blank"  rel='noreferrer external nofollow' href='https://goo.gl/maps/ffBY9fTkRuwNiR1M8' class='contact-item'>
           <img src='~assets/map-icon.svg' alt='Phone icon'>
           <span>ul. Bielska 14<br>
 43-520 Chybie</span>
         </a>
-        <a target="_blank"  rel='noreferrer' href='https://www.facebook.com/Agro-Mar-Pykacz-Marcin-Us%C5%82ugi-Komunalne-i-Rolnicze-Roboty-Ziemne-Chybie-1924696791078849' class='contact-item'>
+        <a target="_blank"  rel='noreferrer external nofollow' href='https://www.facebook.com/Agro-Mar-Pykacz-Marcin-Us%C5%82ugi-Komunalne-i-Rolnicze-Roboty-Ziemne-Chybie-1924696791078849' class='contact-item'>
           <img src='~assets/facebook-icon.svg' alt='Phone icon'>
           <span>@agromarchybie</span>
         </a>
@@ -45,13 +45,12 @@ export default {
 @import 'assets/styles/viewport-sizes';
 @import 'assets/styles/padding-sizes';
 .image-p {
-  background-image: url('~assets/images/contact.jpg?resize&size=500');
+  background-image: url('~assets/images/contact.jpg?resize&size=500?webp');
   background-size: cover;
   background-attachment: scroll;
   background-position: center center;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-
 }
 .contact-container {
   display: grid;
@@ -66,7 +65,6 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr;
     width: 750px;
-
   }
   @media screen and (min-width: $desktop-hd) {
     width: 1150px;
@@ -77,25 +75,12 @@ export default {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 30px;
   @media screen and (min-width: $tablet) {
     grid-column: 1/3;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 }
-.btn {
-  display: block;
-  padding: 10px 15px;
-  font-size: 15px;
-  background-color: transparent;
-  border: 2px solid #0e0d0d;
-  border-radius: 2px;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 10px 0;
-  width: max-content;
-}
+
 .wrapper {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
@@ -125,11 +110,10 @@ export default {
     font-weight: 600;
     @media screen and (min-width: $desktop-hd) {
       font-size: 15px;
-
     }
   }
   & img {
-    width: 40px;
+    width: 25px;
     margin: 15px 0;
   }
   &:hover {

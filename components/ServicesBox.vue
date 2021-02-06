@@ -1,5 +1,5 @@
 <template>
-  <div class="service-container">
+  <nav class="service-container">
     <div class="info-header">
       <HeaderTitle text="Nasze usługi" />
     </div>
@@ -11,7 +11,7 @@
         <nuxt-link to="/uslugi/komunalne">
           <span> Usługi <strong>komunalne</strong> </span>
           <div class="link-icon">
-            <img src="~/assets/right-arrow.svg" alt="Right" />
+            <img src="~/assets/right-arrow.svg" alt="Right arrow" />
           </div>
         </nuxt-link>
       </li>
@@ -19,7 +19,7 @@
         <nuxt-link to="/uslugi/rolnicze">
           <span>Usługi <strong>rolnicze</strong></span>
           <div class="link-icon">
-            <img src="~/assets/right-arrow.svg" alt="Right" />
+            <img src="~/assets/right-arrow.svg" alt="Right arrow" />
           </div>
         </nuxt-link>
       </li>
@@ -27,7 +27,7 @@
         <nuxt-link to="/uslugi/roboty">
           <span>Roboty <strong>ziemne</strong> i <strong>drogowe</strong></span>
           <div class="link-icon">
-            <img src="~/assets/right-arrow.svg" alt="Right" />
+            <img src="~/assets/right-arrow.svg" alt="Right arrow" />
           </div>
         </nuxt-link>
       </li>
@@ -35,7 +35,7 @@
         <nuxt-link to="/uslugi/sezon-zimowy">
           <span>Sezon <strong>zimowy</strong></span>
           <div class="link-icon">
-            <img src="~/assets/right-arrow.svg" alt="Right" />
+            <img src="~/assets/right-arrow.svg" alt="Right arrow" />
           </div>
         </nuxt-link>
       </li>
@@ -43,12 +43,12 @@
         <nuxt-link to="/uslugi/dzierzawa">
           <span><strong>Dzierżawa</strong> i <strong>sprzedaż</strong></span>
           <div class="link-icon">
-            <img src="~/assets/right-arrow.svg" alt="Right" />
+            <img src="~/assets/right-arrow.svg" alt="Right arrow" />
           </div>
         </nuxt-link>
       </li>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -71,7 +71,7 @@ export default {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr 2fr;
   font-family: 'Open Sans', sans-serif;
-
+  width: 100%;
   margin: 0 auto;
   padding: $mobilePadding;
   @media screen and (min-width: $tablet) {
@@ -90,10 +90,9 @@ export default {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-size: 30px;
   @media screen and (min-width: $tablet) {
     grid-column: 1/3;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 }
 
@@ -160,11 +159,11 @@ export default {
     align-items: center;
     width: 100%;
     padding: 15px 10px;
-    font-size: 15px;
+    font-size: 13px;
     text-decoration: none;
     color: hsl(0, 2%, 20%);
     @media screen and (min-width: $tablet) {
-      font-size: 1.3rem;
+      font-size: 18px;
       padding: 20px 25px;
     }
     &.nuxt-link-exact-active {

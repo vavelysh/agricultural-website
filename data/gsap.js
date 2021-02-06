@@ -3,5 +3,5 @@ import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-gsap.defaults({ease: 'power3.inOut'})
+gsap.defaults({ ease: 'power3.inOut' });
 export default gsap;

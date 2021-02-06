@@ -1,37 +1,79 @@
 <template>
-  <div class='wrapp'>
-    <header class='box'>
-      <button class='sender' @click='$router.back()'>
-        <img src='~/assets/back-icon.svg' alt='d'>
-      </button>
-      <h6 class='title'>
-        <slot name='title' />
+  <main class="wrapp">
+    <header class="box">
+      <div class="btn-link-group">
+        <nuxt-link :to="toBackPath">
+          <button class="sender" @click="$router.back()">
+            <img width="100%" height="100%" src="~/assets/back-icon.svg" alt="Back svg icon">
+          </button>
+          <strong>{{toBackText}}</strong>
+        </nuxt-link>
+        <nuxt-link :to="toForwardPath">
+          <strong>{{toForwardText}}</strong>
+          <button class="sender" @click="$router.back()">
+            <img width="100%" height="100%" src="~/assets/forward-icon.svg" alt="Forward svg icon">
+          </button>
+        </nuxt-link>
+      </div>
+      <h6 class="title">
+        <slot name="title" />
       </h6>
     </header>
-    <slot name='content' />
-  </div>
+    <slot name="content" />
+  </main>
 </template>
 
 <script>
 export default {
-  name: 'BusinessService'
-}
+  name: "BusinessService",
+  props: {
+    toBackPath: String,
+    toForwardPath: String,
+    toBackText: String,
+    toForwardText: String,
+  }
+};
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "assets/styles/viewport-sizes";
+
+.btn-link-group {
+  display: flex;
+  justify-content: space-between;
+
+  & a {
+    text-decoration: none;
+    color: hsl(205, 99%, 44%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    & strong {
+      font-size: 12px;
+      margin: 5px;
+      @media screen and (min-width: $tablet) {
+        margin: 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 .wrapp {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .sender {
-  width: 50px;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   border: 0;
   background: hsl(205, 99%, 44%);
-  padding: 15px;
-
+  padding: 10px;
   & > img {
     width: 100%;
     height: 100%;

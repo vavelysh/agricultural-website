@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <video
            class="video-container"
            autoplay
@@ -8,12 +8,11 @@
            muted
            :poster='require(`~/assets/poster.png`)'
     >
-<!--      https://res.cloudinary.com/dtvvkwgbg/video/upload/v1612010002/agrolp/video_agro.mp4-->
       <source :src="$cloudinary.video.url('/agrolp/video_agro.mp4')" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <AboutBox :extended="true" />
-  </div>
+  </main>
 </template>
 
 <script>
@@ -21,6 +20,24 @@ import AboutBox from '../components/AboutBox';
 export default {
   name: 'o-nas',
   components: { AboutBox },
+  data() {
+    return {
+      title: 'O naszej firmie',
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'O firmie Agro-Mar z miejscowości Chybie, która oferuje profesjonalne usługi komunalne i rolnicze na terenie całego województwa śląskiego i okolicach.',
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -32,7 +49,7 @@ export default {
   object-fit: cover;
   height: 40vh;
   @media screen and (min-width: $mobile) {
-    height: 70vh;
+    height: 50vh;
     background-position: center center;
   }
 }

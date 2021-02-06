@@ -5,7 +5,7 @@
         <Logo />
       </nuxt-link>
       <nav class='nav-items'>
-        <NavItems/>
+        <NavItems :menu-close-handler="toggleSidebar"/>
       </nav>
       <div @click="toggleSidebar" class="burger">
         <MenuOpen />
@@ -40,7 +40,7 @@ export default {
 .logo,
 .burger {
   display: block;
-  fill: black;
+  fill: white;
 }
 .logo {
   width: 85px;
@@ -59,7 +59,6 @@ export default {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   width: 100%;
 
@@ -75,7 +74,6 @@ export default {
   height: 80px;
   padding: 10px 15px;
   z-index: 10;
-  background: #f4f7f6;
-  border-bottom: 1px solid hsla(180, 2%, 68%, 0.7);
+  background: #1D1D2C;
 }
 </style>
