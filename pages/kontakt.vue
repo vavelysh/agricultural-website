@@ -32,10 +32,6 @@ export default {
 
 <style scoped>
 .contact-box-wrapper{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }
 </style>
