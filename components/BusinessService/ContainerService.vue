@@ -31,6 +31,7 @@ export default {
 
 <style lang='scss' scoped>
 @import "assets/styles/viewport-sizes";
+
 .cs-wrapper {
   width: 100%;
   display: flex;
@@ -39,12 +40,11 @@ export default {
   align-items: center;
   & img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     filter: saturate(130% );
     @media screen and (min-width: $tablet){
       width: 600px;
-      height: 400px;
       border-radius:15px;
       transform: scale(1.03);
       margin-bottom: 30px;
@@ -59,9 +59,9 @@ export default {
 .container-service {
   width: 100%;
   background: hsl(205, 99%, 44%);
-  padding: 30px;
+  padding: 20px;
   font-family: 'Open Sans',sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   color: white;
   @media screen and (min-width: $tablet){
     font-size: 1rem;

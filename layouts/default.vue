@@ -38,8 +38,11 @@ export default {
   flex-direction: column;
 }
 .content {
-  margin-top: 80px;
+  margin-top: 55px;
   flex: 1 0 auto;
+  @media screen and (min-width: $mobile) {
+    margin-top: 75px;
+  }
 }
 .footer {
   flex-shrink: 0;

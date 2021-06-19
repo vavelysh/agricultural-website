@@ -2,7 +2,6 @@
   <footer class="footer-wrapper">
     <section class="footer-container">
       <p>© 2021 AGRO-MAR - usługi komunalne i rolnicze. Roboty ziemne i drogowe</p>
-      <p>Stronę wykonał <a class="footer-link" target="_blank" rel="noreferrer external nofollow" href="https://www.linkedin.com/in/adrianpykacz/">Adrian Pykacz</a></p>
     </section>
   </footer>
 </template>
@@ -16,9 +15,9 @@ export default {
 <style lang="scss" scoped>
 @import 'assets/styles/viewport-sizes';
 .footer-wrapper {
-  background: #efeaea;
+  background: #265293;
   text-align: center;
-  color: #666;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   font-size: 12px;

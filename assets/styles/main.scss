@@ -24,10 +24,3 @@ html {
 body {
   background: #F4F7F6;
 }
-.page-enter-active, .page-leave-active {
-  transition: all 0.37s ease;
-}
-.page-enter,.page-leave-active {
-  opacity: 0;
-  transform: scale(0);
-}

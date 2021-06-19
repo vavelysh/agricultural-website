@@ -43,9 +43,9 @@ export default {
   fill: white;
 }
 .logo {
-  width: 85px;
+  width: 65px;
   @media screen and(min-width: $tablet) {
-    width: 135px;
+    width: 120px;
     padding-left: 35px;
     display: block;
   }
@@ -61,7 +61,6 @@ export default {
   justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-
 }
 .wrapper {
   display: flex;
@@ -71,9 +70,8 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   z-index: 10;
-  background: #1D1D2C;
+  background: #004C8F;
 }
 </style>
