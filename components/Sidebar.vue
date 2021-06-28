@@ -31,9 +31,9 @@ export default {
   width: 100%;
 }
 .close-icon-wrapper{
-  width: 50px;
+  width: 34px;
   padding-right: 10px;
-  fill: #130101;
+  fill: #ffffff;
 }
 .wrapper {
   z-index: 10;
@@ -42,7 +42,7 @@ export default {
   right: 0;
   width: 80%;
   height: 100vh;
-  background: rgb(255, 255, 255);
+  background: #263238;
   transform: translateX(100%);
   transition: transform 0.4s ease-out;
 }

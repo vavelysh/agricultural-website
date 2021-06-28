@@ -51,7 +51,8 @@ export default {
   }
 }
 .burger {
-  width: 40px;
+  width: 34px;
+  padding-right: 10px;
   @media screen and(min-width: $tablet) {
     display: none;
   }
@@ -72,6 +73,6 @@ export default {
   width: 100%;
   padding: 5px 10px;
   z-index: 10;
-  background: #004C8F;
+  background: #263238;
 }
 </style>

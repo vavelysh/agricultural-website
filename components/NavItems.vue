@@ -48,19 +48,19 @@ export default {
 }
 .nuxt-link {
   width: 100%;
-  color: hsl(0, 0%, 56%);
+  color: #CFD8DC;
   text-decoration: none;
   transition:font-weight 0.1s ease-in,color 0.2s ease-in;
   padding:0 25px;
   &.nuxt-link-exact-active   {
     font-weight: bolder;
-    color: #629ffc;
+    color: #ECEFF1;
   }
   &:hover{
-    color:#629ffc;
+    color:#ECEFF1;
   }
   @media screen and (min-width: $tablet) {
-    color: white;
+    color: #CFD8DC;
   }
 }
 </style>

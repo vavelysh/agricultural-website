@@ -15,7 +15,7 @@ export default {
 <style lang="scss" scoped>
 @import 'assets/styles/viewport-sizes';
 .footer-wrapper {
-  background: #265293;
+  background: #263238;
   text-align: center;
   color: #ffffff;
   display: flex;
