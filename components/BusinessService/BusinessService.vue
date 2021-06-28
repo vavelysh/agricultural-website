@@ -44,7 +44,7 @@ export default {
 
   & a {
     text-decoration: none;
-    color: hsl(205, 99%, 44%);
+    color: #455A64;
     display: flex;
     align-items: center;
     text-align: center;
@@ -72,7 +72,7 @@ export default {
   width: 30px;
   height: 30px;
   border: 0;
-  background: hsl(205, 99%, 44%);
+  background: #455A64;
   padding: 10px;
   & > img {
     width: 100%;
@@ -94,12 +94,12 @@ export default {
   padding: 10px 0;
   text-transform: uppercase;
   font-family: 'Poppins', 'Roboto', sans-serif;
-  color: hsl(205, 99%, 44%);
+  color: #455A64;
   user-select: none;
 }
 
 .title {
-  margin: 50px 0;
+  margin: 20px 0;
   font-weight: 600;
   font-size: 20px;
   text-align: center;

@@ -17,6 +17,7 @@ export default {
         name: 'copyright',
         content: 'Agro-Mar Pykacz Marcin',
       },
+      { name: 'theme-color', content: '#263238' },
       {
         name: 'robots',
         content: 'follow',

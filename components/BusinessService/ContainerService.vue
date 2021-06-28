@@ -58,7 +58,7 @@ export default {
 
 .container-service {
   width: 100%;
-  background: hsl(205, 99%, 44%);
+  background: #455A64;
   padding: 20px;
   font-family: 'Open Sans',sans-serif;
   font-size: 11px;
